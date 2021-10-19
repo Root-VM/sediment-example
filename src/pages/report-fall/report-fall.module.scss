@@ -1,0 +1,220 @@
+.fallPage {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+
+    &.titleMrg {
+      margin-top: 10px;
+    }
+  }
+
+  :global {
+    .react-datepicker__input-container {
+      margin-bottom: 10px;
+    }
+
+    .myCheck {
+      margin-bottom: 30px;
+    }
+  }
+
+  .textarea {
+    margin-bottom: 20px;
+  }
+
+  .select {
+    margin-bottom: 10px;
+  }
+
+  .longMrg {
+    margin-bottom: 20px;
+  }
+
+  .btnGroup {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 40px;
+
+    button {
+      min-height: 50px;
+      padding: 6px 23px;
+    }
+  }
+}
+
+.errorText {
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-red-error);
+  margin-bottom: 15px;
+  margin-top: -8px;
+
+  &.errorTextarea {
+    margin-top: -18px;
+  }
+}
+
+.messageSend {
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.back {
+  cursor: pointer;
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: var(--color-dark);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .fallPage {
+    overflow: hidden;
+    display: grid;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    form {
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        "boxOne boxTwo"
+        "space btn";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+
+      > div:nth-child(1) {
+        grid-area: boxOne;
+      }
+
+      > div:nth-child(2) {
+        grid-area: boxTwo;
+      }
+
+      > div:last-child {
+        grid-area: btn;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btnGroup {
+        display: flex;
+        justify-content: flex-end;
+
+        button:first-child {
+          max-width: 210px;
+        }
+
+        button {
+          max-width: 154px;
+        }
+      }
+
+      .textarea {
+        height: 100%;
+        max-height: 238px;
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 20px;
+
+      &.titleMrg {
+        margin-top: 0;
+      }
+    }
+
+    :global {
+      .react-datepicker__input-container {
+        margin-bottom: 20px;
+      }
+
+      .myCalendar,
+      .myTime {
+        margin-bottom: 20px;
+      }
+
+      .myCheck {
+        margin-bottom: 0;
+      }
+    }
+
+    .textarea {
+      margin-bottom: 30px;
+    }
+
+    .select {
+      margin-bottom: 0;
+
+      & ~ .errorText {
+        margin-top: 3px;
+        margin-bottom: 0;
+      }
+    }
+
+    .longMrg {
+      margin-bottom: 20px;
+    }
+
+    .btnGroup {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      margin-bottom: 40px;
+
+      button {
+        min-height: 50px;
+        padding: 6px 23px;
+      }
+    }
+  }
+
+  .errorText {
+    margin-bottom: 20px;
+    margin-top: -17px;
+
+    &.errorTextarea {
+      margin-top: -25px;
+    }
+  }
+}

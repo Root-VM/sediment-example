@@ -1,0 +1,142 @@
+.customersPage {
+  .greyText {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-grey1);
+    margin-bottom: 20px;
+
+    img {
+      margin-right: 5px;
+    }
+
+    span {
+      cursor: pointer;
+      margin-left: 5px;
+      text-decoration: underline;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .filterImg {
+    position: relative;
+
+    &.point::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      right: -5px;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+      background: var(--color-red);
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .customersPage {
+    .list {
+      .listTitle {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .customersPage {
+    &.rowType {
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .listTitle {
+          display: none;
+        }
+      }
+    }
+
+    &.lineType {
+      .list {
+        border: 1px solid var(--color-grey);
+        border-radius: 8px;
+      }
+    }
+
+    .list {
+      .listTitle {
+        display: grid;
+        grid-template-columns: minmax(150px, 1fr) minmax(150px, 1.4fr) minmax(150px, 1fr) minmax(90px, 0.8fr) minmax(90px, 1.3fr);
+        grid-gap: 20px;
+        min-height: 62px;
+        background: rgba(251, 251, 251, 1);
+        padding: 0 30px;
+        overflow: hidden;
+
+        p {
+          display: flex;
+          align-items: center;
+          font-family: var(--font-gilroy);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .filterRow {
+      margin-right: 40px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      .greyText {
+        white-space: nowrap;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .customersPage {
+    &.rowType {
+      .list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1250px) {
+  .controls {
+    flex-direction: column;
+  }
+}

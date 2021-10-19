@@ -1,0 +1,35 @@
+---
+version: "3.7"
+services:
+  lint:
+    image: "vigilance_cockpit_mobile_frontend:${TAG:-latest}"
+    build:
+      target: deps
+      context: .
+      cache_from:
+        - "vigilance_cockpit_mobile_frontend:${TAG:-latest}"
+    env_file: .env.example
+    volumes:
+      - ./public:/app/public
+      - ./src:/app/src
+      - ./.eslintrc.json:/app/.eslintrc.json
+      - ./.prettierignore:/app/.prettierignore
+      - ./.prettierrc.json:/app/.prettierrc.json
+      - ./.next.config.js:/app/.next.config.js
+      - ./.stylelintrc.json:/app/.stylelintrc.json
+    command: yarn lint
+  tests:
+    image: "vigilance_cockpit_mobile_frontend:${TAG:-latest}"
+    build:
+      target: "${TARGET:-deps}"
+      context: .
+      cache_from:
+        - "vigilance_cockpit_mobile_frontend:${TAG:-latest}"
+    env_file: .env.example
+    volumes:
+      - ./public:/app/public
+      - ./src:/app/src
+      - ./.jest.config.js:/app/.jest.config.js
+      - ./.babelrc:/app/.babelrc
+      - ./package.json:/app/package.json
+    command: yarn run test

@@ -1,0 +1,45 @@
+.check {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+
+  .img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  input {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+  }
+
+  label {
+    cursor: pointer;
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-dark-blue);
+    user-select: none;
+  }
+
+  &.error {
+    label {
+      color: var(--color-red-error);
+
+      a {
+        color: var(--color-red-error);
+      }
+    }
+  }
+}

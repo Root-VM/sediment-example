@@ -1,0 +1,19 @@
+.logo {
+  width: 100%;
+  max-width: 315px;
+  height: 55px;
+  position: relative;
+  margin-top: 3px;
+}
+
+@media (min-width: 960px) {
+  .logo {
+    max-width: 404px;
+    height: 70px;
+    position: relative;
+  }
+
+  .logo:not(.showInDesk) {
+    display: none;
+  }
+}

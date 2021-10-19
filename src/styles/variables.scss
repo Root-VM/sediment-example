@@ -1,0 +1,25 @@
+:root {
+  // main colors list
+  --color-dark: rgba(51, 47, 46, 1);
+  --color-black-dark: rgba(0, 0, 0, 1);
+  --color-dark-blue: rgba(29, 35, 46, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-grey: rgba(235, 235, 235, 1);
+  --color-grey1: rgba(189, 189, 189, 1);
+  --color-grey2: rgba(224, 224, 224, 1);
+  --color-grey3: rgba(242, 242, 242, 1);
+  --color-yellow: rgba(240, 209, 47, 1);
+  --color-red: rgba(115, 47, 55, 1);
+  --color-red-error: rgba(235, 87, 87, 1);
+  --color-blue: rgba(47, 63, 115, 1);
+  --color-green: rgba(39, 174, 96, 1);
+
+  // focused, pressed colors
+  --color-yellow-dark: rgba(229, 193, 16, 1);
+  --color-red-dark: rgba(87, 35, 41, 1);
+  --color-blue-dark: rgba(36, 48, 86, 1);
+
+  // fonts list
+  --font-lato: 'Lato', sans-serif;
+  --font-gilroy: 'Gilroy', sans-serif;
+}

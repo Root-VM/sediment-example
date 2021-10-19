@@ -1,0 +1,232 @@
+.wrap {
+  width: 100%;
+  padding: 20px;
+  background: var(--color-white);
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--color-grey);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .pageLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .title {
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-red);
+    margin-bottom: 20px;
+  }
+
+  .line {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    .img {
+      width: 20px;
+      margin-right: 7px;
+      margin-bottom: -5px;
+    }
+
+    p {
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-dark);
+      margin-right: 7px;
+    }
+
+    span {
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-dark);
+      margin-right: 7px;
+
+      &.alarm {
+        color: var(--color-red-error);
+      }
+    }
+
+    div.alarm {
+      cursor: pointer;
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 7px;
+      color: var(--color-red-error);
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 7px;
+      }
+    }
+
+    .doorAlarm {
+      z-index: 10;
+      padding: 2px 5px;
+      border: 1px solid var(--color-grey1);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        margin-right: 3px;
+      }
+
+      p {
+        font-family: var(--font-gilroy);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-grey1);
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .wrap {
+    margin-bottom: 0;
+
+    &.lineType {
+      margin-bottom: 0;
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) minmax(150px, 1.4fr) minmax(150px, 1fr) minmax(90px, 1.3fr);
+      grid-gap: 20px;
+      border-radius: 0;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      padding: 19px 30px;
+
+      .title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+
+      .line {
+        margin-bottom: 0;
+
+        .img,
+        >p {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--color-red);
+      margin-bottom: 20px;
+    }
+
+    .line {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      z-index: 1;
+
+      .img {
+        width: 20px;
+        margin-right: 7px;
+        margin-bottom: -5px;
+      }
+
+      p {
+        font-family: var(--font-gilroy);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--color-dark);
+        margin-right: 7px;
+      }
+
+      span {
+        font-family: var(--font-gilroy);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--color-dark);
+        margin-right: 7px;
+
+        &.alarm {
+          color: var(--color-red-error);
+        }
+      }
+
+      div.alarm {
+        cursor: pointer;
+        font-family: var(--font-gilroy);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 7px;
+        color: var(--color-red-error);
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-left: 7px;
+        }
+      }
+
+      .doorAlarm {
+        z-index: 10;
+        padding: 2px 5px;
+        border: 1px solid var(--color-grey1);
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+          margin-right: 3px;
+        }
+
+        p {
+          font-family: var(--font-gilroy);
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: var(--color-grey1);
+        }
+      }
+    }
+  }
+}

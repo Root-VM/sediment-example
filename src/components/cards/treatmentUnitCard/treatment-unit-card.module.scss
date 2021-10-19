@@ -1,0 +1,132 @@
+.wrap {
+  width: 100%;
+  padding: 20px;
+  background: var(--color-white);
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--color-grey);
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-red);
+    margin-bottom: 20px;
+  }
+
+  .line {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    .img {
+      width: 20px;
+      margin-right: 7px;
+      margin-bottom: -5px;
+    }
+
+    p {
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-dark);
+      margin-right: 7px;
+    }
+
+    span {
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-dark);
+      margin-right: 7px;
+
+      &.alarm {
+        color: var(--color-red-error);
+      }
+
+      &.devices {
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .doorAlarm {
+      padding: 2px 5px;
+      border: 1px solid var(--color-grey1);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 3px;
+      }
+
+      p {
+        font-family: var(--font-gilroy);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--color-grey1);
+      }
+    }
+  }
+
+  &.disable {
+    .title {
+      color: var(--color-grey1);
+    }
+
+    .line {
+      p,
+      span {
+        color: var(--color-grey1);
+      }
+
+      img {
+        filter: brightness(0) saturate(100%) invert(88%) sepia(5%) saturate(24%) hue-rotate(348deg) brightness(90%) contrast(80%);
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .wrap {
+    margin-bottom: 0;
+
+    &.lineType {
+      display: grid;
+      grid-template-columns: minmax(150px, 1fr) minmax(150px, 1.4fr) minmax(150px, 1fr) minmax(90px, 0.8fr) minmax(90px, 1.3fr);
+      grid-gap: 20px;
+      border-radius: 0;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      padding: 19px 30px;
+
+      .title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+
+      .line {
+        margin-bottom: 0;
+
+        .img,
+        >p {
+          display: none;
+        }
+      }
+    }
+  }
+}

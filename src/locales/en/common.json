@@ -1,0 +1,85 @@
+{
+  "common": {
+	"copied": "Copied!",
+	"no_options": "no options found",
+	"not_exist": "this page do not exist"
+  },
+  "login": {
+	"title": "Registration",
+	"user_name": "Username",
+	"user_name_error": "This field is required",
+	"password": "Password",
+	"password_error": "Please write at least 8 letters, including number and special characters",
+	"stay_signed_in": "stay signed in",
+	"register": "Send",
+	"contact_support": "Contact and Support"
+  },
+  "profile": {
+	"title": "Your user profile",
+	"full_name": "Name / Surname",
+	"email": "E-Mail",
+	"logout": "Log out",
+	"cancel": "Cancel",
+	"logout_you_sure": "Are you sure you want to log out?"
+  },
+  "customers": {
+	"customer_overview": "Customer overview",
+	"location": "location",
+	"count": "units",
+	"deactivate": "deactivated",
+	"notifications": "notifications",
+	"last_72": "of the last 72 hours",
+	"filter_active": "filter active",
+	"responsible": "supervised by",
+	"devices": "devices",
+	"alarm": "notifications",
+	"active": "active"
+  },
+  "support": {
+	"contacts_support": "Contact and Support",
+	"address": "Sedimentum AG, Dorfplatz 6. 6330 Cham, Switzerland",
+	"have_question1": "If you have any questions or comments,",
+	"have_question2": "please contact us as follows:"
+  },
+  "report_fall": {
+	"title": "Report a fall event",
+	"main_info": "General information",
+	"date_plc": "Select date",
+	"time_plc": "Select time",
+	"error": "This field is required",
+	"location_plc": "Location",
+	"responsible_plc": "Supervised by",
+	"room": "Room",
+	"description": "Description",
+	"description_plc": "Please briefly describe what happened.",
+	"check_accept": "I have checked the data entered above and confirm that it is correct.",
+	"save": "Submit",
+	"cancel": "Cancel",
+	"form_sent": "The fall event was successfully transmitted"
+  },
+  "filter": {
+	"title": "Advanced filters",
+	"reset": "reset filter",
+	"location": "location",
+	"all": "All",
+	"alarm": "Alarms",
+	"deactivate": "Deactivate"
+  },
+  "treatment_units": {
+	"last_72_notf": "Notifications for the last 72 hours",
+	"devices": "Devices",
+	"fall_report": "Report a fall event",
+	"description": "Reason (optional)",
+	"fall_submitted": "The fall event was successfully submitted",
+	"describe": "Please briefly describe what happened.",
+	"describe_error": "This field is mandatory",
+	"send": "Submit",
+	"status": "Status",
+	"online": "online",
+	"offline": "offline",
+	"settings": "Settings",
+	"activation": "Activation",
+	"is_active": "Room is activated",
+	"save": "Save settings"
+  }
+}

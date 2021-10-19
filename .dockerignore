@@ -1,0 +1,6 @@
+.git
+.results
+scripts
+*Dockerfile*
+.env
+public/__ENV.js

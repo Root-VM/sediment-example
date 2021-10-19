@@ -1,0 +1,85 @@
+{
+  "common": {
+	"copied": "Kopiert!",
+	"no_options": "keine Optionen gefunden",
+	"not_exist": "diese Seite existiert nicht"
+  },
+  "login": {
+	"title": "Anmelden",
+	"user_name": "Benutzername",
+	"user_name_error": "Dieses Feld ist ein Pflichtfeld",
+	"password": "Passwort",
+	"password_error": "Dieses Feld ist ein Pflichtfeld",
+	"stay_signed_in": "angemeldet bleiben",
+	"register": "Anmelden",
+	"contact_support": "Kontakt und Support"
+  },
+  "profile": {
+	"title": "Ihr Benutzerprofil",
+	"full_name": "Name / Nachname",
+	"email": "E-Mail",
+	"logout": "Abmelden",
+	"cancel": "Abbrechen",
+	"logout_you_sure": "Sind Sie sicher, dass Sie sich abmelden möchten?"
+  },
+  "customers": {
+	"customer_overview": "Übersicht",
+	"location": "Standort",
+	"count": "Einheiten",
+	"deactivate": "Deaktiviert",
+	"notifications": "Benachrichtigungen",
+	"last_72": "der letzten 72 Stunden",
+	"filter_active": "Filter aktiv",
+	"responsible": "Betreut durch",
+	"devices": "Geräte",
+	"alarm": "Benachrichtigungen",
+	"active": "Aktiv"
+  },
+  "support": {
+	"contacts_support": "Kontakt und Support",
+	"address": "Sedimentum AG, Dorfplatz 6. 6330 Cham, Switzerland",
+	"have_question1": "Wenn Sie Fragen oder Anmerkungen haben,",
+	"have_question2": "kontaktieren Sie uns bitte wie folgt:"
+  },
+  "report_fall": {
+	"title": "Sturzereignis melden",
+	"main_info": "Allgemeine Informationen",
+	"date_plc": "Datum auswählen",
+	"time_plc": "Zeit auswählen",
+	"error": "Dieses Feld ist ein Pflichtfeld",
+	"location_plc": "Standort",
+	"responsible_plc": "Betreut durch",
+	"room": "Zimmer",
+	"description": "Beschreibung",
+	"description_plc": "Bitte beschreiben Sie kurz, was passiert ist.",
+	"check_accept": "Ich habe die oben eingegebenen Daten überprüft und bestätige deren Richtigkeit.",
+	"save": "Sturzereignis melden",
+	"cancel": "Abbrechen",
+	"form_sent": "Die Meldung des Sturzereignisses wurde erfolgreich übermittelt"
+  },
+  "filter": {
+	"title": "Erweiterte Filter",
+	"reset": "Filter zurücksetzen",
+	"location": "Standort",
+	"all": "Alle",
+	"alarm": "Alarme",
+	"deactivate": "Deaktiviert"
+  },
+  "treatment_units": {
+	"last_72_notf": "Benachrichtigungen der letzten 72 Stunden",
+	"devices": "Geräte",
+	"fall_report": "Sturzereignis melden",
+	"description": "Begründung (optional)",
+	"fall_submitted": "Das Sturzereignis wurde erfolgreich übermittelt",
+	"describe": "Bitte beschreiben Sie kurz, was passiert ist.",
+	"describe_error": "Dieses Feld ist ein Pflichtfeld",
+	"send": "Speichern",
+	"status": "Status",
+	"online": "Online",
+	"offline": "Offline",
+	"settings": "Einstellungen",
+	"activation": "Aktivierung",
+	"is_active": "Zimmer ist aktiviert",
+	"save": "Einstellungen speichern"
+  }
+}

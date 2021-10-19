@@ -1,0 +1,13 @@
+---
+version: "3.7"
+services:
+  vigilance_cockpit_mobile_frontend:
+    build:
+      target: deps
+      context: .
+    env_file: .env
+    ports:
+      - 3002:3000
+    volumes:
+      - ./:/app/
+    command: npm run dev

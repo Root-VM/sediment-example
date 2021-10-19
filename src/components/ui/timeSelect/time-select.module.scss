@@ -1,0 +1,35 @@
+@media (max-width: 959px) {
+  .time {
+    input {
+      border: none;
+      background: none;
+      opacity: 1;
+      border-radius: 8px;
+      padding: 0 18px 0 20px;
+      font-family: var(--font-gilroy);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      outline: none;
+      top: 1px;
+      left: 1px;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+
+      &.grey {
+        color: var(--color-grey1);
+      }
+
+      &::-webkit-calendar-picker-indicator {
+        background: none;
+      }
+    }
+
+    >div:first-child {
+      p {
+        opacity: 0;
+      }
+    }
+  }
+}

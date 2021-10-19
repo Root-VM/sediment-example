@@ -1,0 +1,113 @@
+.clientsPage {
+  >div:first-child > div:first-child {
+    margin-bottom: 37px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .greyText {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-gilroy);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-grey1);
+    margin-bottom: 25px;
+    margin-top: -20px;
+    word-break: break-word;
+    flex-wrap: wrap;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+
+    span:last-child {
+      cursor: pointer;
+      margin-left: 5px;
+      text-decoration: underline;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .clientsPage {
+    &.rowType {
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .listTitle {
+          display: none;
+        }
+      }
+    }
+
+    &.lineType {
+      .list {
+        border: 1px solid var(--color-grey);
+        border-radius: 8px;
+      }
+    }
+
+    .list {
+      .listTitle {
+        display: grid;
+        grid-template-columns: minmax(150px, 1fr) minmax(150px, 1.4fr) minmax(150px, 1fr) minmax(90px, 1.3fr);
+        grid-gap: 20px;
+        min-height: 62px;
+        background: rgba(251, 251, 251, 1);
+        padding: 0 30px;
+        overflow: hidden;
+
+        p {
+          display: flex;
+          align-items: center;
+          font-family: var(--font-gilroy);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .clientsPage {
+    &.rowType {
+      .list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
